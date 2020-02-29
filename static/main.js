@@ -1,5 +1,6 @@
 funcation clickLogin(){
+    var theWord = $("#username-input").val();
     $.get("/log", {}, function(response){
-        $("#displayBio").html(response);
+        $("#username").html(response);
     });
 }

@@ -1,5 +1,5 @@
-funcation clickLogIn(){
-    $.get("/user_input_btn", {}, function(response){
-        $("#user_input_btn").html(response);
+funcation clickLogin(){
+    $.get("/log", {}, function(response){
+        $("#displayBio").html(response);
     });
 }
